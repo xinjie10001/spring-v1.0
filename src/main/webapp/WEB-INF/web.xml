@@ -3,7 +3,7 @@
   <display-name>spring-v1.0</display-name>
   <servlet>
     <servlet-name>spring</servlet-name>
-    <servlet-class>com.mmgg.DispaterServlet</servlet-class>
+    <servlet-class>com.mmgg.servlet.DispaterServlet</servlet-class>
     <init-param>
       <param-name>contextConfigLocation</param-name>
       <param-value>classpath:application.properties</param-value>
