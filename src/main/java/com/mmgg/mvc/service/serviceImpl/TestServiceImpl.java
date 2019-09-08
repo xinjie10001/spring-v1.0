@@ -1,4 +1,4 @@
-package com.mmgg.mvc.serviceImpl;
+package com.mmgg.mvc.service.serviceImpl;
 
 import com.mmgg.annotation.Service;
 import com.mmgg.mvc.service.TestService;
@@ -7,7 +7,7 @@ import com.mmgg.mvc.service.TestService;
 public class TestServiceImpl implements TestService {
 
     @Override
-    public String getTestService() {
-        return "success";
+    public String getTestService(String name) {
+        return "My name is:"+name;
     }
 }

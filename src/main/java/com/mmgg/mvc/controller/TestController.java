@@ -20,11 +20,12 @@ public class TestController {
     @RequestMapping("get")
     public void query(HttpServletRequest request, HttpServletResponse response,
          @RequestParam("name")String name){
-       String str = testService.getTestService();
-        try {
+        String str = testService.getTestService(name);
+        System.out.printf(str);
+        /*try {
             response.getWriter().write(str);
         } catch (IOException e) {
             e.printStackTrace();
-        }
+        }*/
     }
 }
